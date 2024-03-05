@@ -1,0 +1,108 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  user-select: none;
+}
+
+.items-organization{
+  display: flex;
+  justify-content: center;
+}
+
+.panel{
+  width: auto;
+  height: auto;
+  background-color: rgba(54, 54, 54, 0.554);
+  border-radius: 20px;
+  
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.screen{
+  width: 700px;
+  height: 100px;
+  background-color: black;
+  border-radius: 20px;
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  margin: 20px;
+}
+
+#functions{
+  height: auto;
+  width: 700px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  grid-template-areas: 
+  "ac sign dot operators"
+  "nums nums nums operators"
+  "nums nums nums operators"
+  "nums nums nums operators"
+  "nums nums nums equal";
+}
+.ac{
+  grid-area: ac;
+}
+.sign{
+  grid-area: sign;
+}
+.porcent{
+  grid-area: dot;
+}
+.operators{
+  grid-area: operators;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.nums{
+  grid-area: nums;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.dot{
+  grid-area: dot;
+}
+.equal{
+  grid-area: equal;
+}
+
+.button{
+  height: 80px;
+  width: 160px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.color-numbers{
+  background-color: black;
+  border: 5px solid green;
+}
+.color-operations{
+  background-color: green;
+  border: 5px solid black;
+}
+.color-fuctions{
+  background-color: gray;
+  border: 5px solid black;
+}
